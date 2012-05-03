@@ -8,10 +8,10 @@ class CeresSolver < Formula
   version tag
 
   depends_on 'cmake' => :build
-  depends_on 'glog'
-  depends_on 'eigen'
-  depends_on 'suite-sparse'
-  depends_on 'protobuf'
+  depends_on 'glog' => :build
+  depends_on 'eigen' => :build
+  depends_on 'suite-sparse' => :build
+  depends_on 'protobuf' => :build
 
   def install
     system "mkdir", "ceres-bin"
